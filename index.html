@@ -1,152 +1,194 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Profissional — Raul Silva Pereira</title>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: white;
-            color: black;
-        }
-        @media (prefers-color-scheme: dark) {
-            body {
-                background-color: #121212;
-                color: white;
-            }
-        }
-        @media (prefers-color-scheme: light) {
-            body {
-                background-color: white;
-                color: black;
-            }
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        .container {
-            padding: 2rem;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        @media (prefers-color-scheme: dark) {
-            h1, h2, h3 {
-                color: #fff;
-            }
-        }
-        .fade-in {
-            opacity: 0;
-            animation: fadeIn 2s ease-in forwards;
-        }
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-            }
-        }
-    </style>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raul Silva Pereira — Portfólio Profissional</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Lottie -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-</head>
-<body>
-    <header>
-        <h1>📂 Portfólio Profissional — Raul Silva Pereira</h1>
-        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_tfb3estd.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-900 text-white font-sans">
+    <!-- Navbar -->
+    <header class="bg-gray-800 shadow-md fixed top-0 w-full z-50">
+      <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+        <h1 class="text-xl font-bold">Raul Silva Pereira</h1>
+        <nav class="space-x-4">
+          <a href="#sobre" class="hover:text-cyan-400">Sobre</a>
+          <a href="#atuacao" class="hover:text-cyan-400">Atuação</a>
+          <a href="#projetos" class="hover:text-cyan-400">Projetos</a>
+          <a href="#formacao" class="hover:text-cyan-400">Formação</a>
+          <a href="#contato" class="hover:text-cyan-400">Contato</a>
+        </nav>
+      </div>
     </header>
-    <div class="container">
-        <section class="fade-in">
-            <h2>👨‍💻 Sobre mim</h2>
-            <p>Engenheiro de Computação formado pela Universidade São Judas Tadeu, atuando como Analista de Infraestrutura, com experiência sólida em ambientes corporativos Microsoft, Linux e VMware.</p>
-            <p>Ofereço consultoria especializada em TI, com foco em segurança, automação e continuidade de negócios.</p>
-        </section>
-        <section class="fade-in">
-            <h2>🛠️ Áreas de Atuação</h2>
-            <h3>Microsoft 365 & Power Platform</h3>
-            <ul>
-                <li>Administração de Exchange Online, SharePoint e Teams</li>
-                <li>Gestão de usuários, grupos e licenças no Azure AD</li>
-                <li>Implantação de MFA e políticas de segurança</li>
-                <li>Automação de processos com Power Automate</li>
-                <li>Integrações com Microsoft Graph API (envio de e-mails, OAuth)</li>
+
+    <!-- Hero -->
+    <section class="pt-32 pb-20 text-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+      <div class="max-w-3xl mx-auto">
+        <lottie-player
+          src="https://assets10.lottiefiles.com/packages/lf20_tfb3estd.json"
+          background="transparent"
+          speed="1"
+          style="width: 150px; height: 150px; margin: auto"
+          loop
+          autoplay
+        ></lottie-player>
+        <h2 class="text-4xl font-extrabold mt-6">Engenheiro de Computação & Especialista em Infraestrutura</h2>
+        <p class="text-gray-400 mt-4">Consultoria em TI, automação, segurança e continuidade de negócios</p>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-16 bg-gray-900" data-aos="fade-up">
+      <div class="max-w-4xl mx-auto px-4">
+        <h3 class="text-3xl font-semibold mb-4">👨‍💻 Sobre Mim</h3>
+        <p class="text-gray-300 mb-2">
+          Engenheiro de Computação formado pela Universidade São Judas Tadeu, atuando como Analista de Infraestrutura,
+          com experiência sólida em ambientes corporativos Microsoft, Linux e VMware.
+        </p>
+        <p class="text-gray-300">
+          Ofereço consultoria especializada em TI, com foco em segurança, automação e continuidade de negócios.
+        </p>
+      </div>
+    </section>
+
+    <!-- Atuação -->
+    <section id="atuacao" class="py-16 bg-gray-800" data-aos="fade-up">
+      <div class="max-w-6xl mx-auto px-4">
+        <h3 class="text-3xl font-semibold mb-8 text-center">🛠️ Áreas de Atuação</h3>
+
+        <div class="space-y-10">
+          <div>
+            <h4 class="text-xl font-bold text-cyan-400">Microsoft 365 & Power Platform</h4>
+            <ul class="list-disc list-inside text-gray-300">
+              <li>Administração de Exchange Online, SharePoint e Teams</li>
+              <li>Gestão de usuários, grupos e licenças no Azure AD</li>
+              <li>Implantação de MFA e políticas de segurança</li>
+              <li>Automação de processos com Power Automate</li>
+              <li>Integrações com Microsoft Graph API</li>
             </ul>
-            <h3>Active Directory (AD)</h3>
-            <ul>
-                <li>Criação e gestão de GPOs e OUs</li>
-                <li>Políticas de acesso e provisionamento automatizado</li>
-                <li>Integração com ambientes híbridos</li>
+          </div>
+
+          <div>
+            <h4 class="text-xl font-bold text-cyan-400">Active Directory (AD)</h4>
+            <ul class="list-disc list-inside text-gray-300">
+              <li>Criação e gestão de GPOs e OUs</li>
+              <li>Políticas de acesso e provisionamento automatizado</li>
+              <li>Integração com ambientes híbridos</li>
             </ul>
-            <h3>Servidores Linux e Windows</h3>
-            <ul>
-                <li>Gestão de file servers e permissões (ACLs)</li>
-                <li>Configuração e manutenção de SFTP seguro</li>
-                <li>Gerenciamento de atualizações e segurança</li>
+          </div>
+
+          <div>
+            <h4 class="text-xl font-bold text-cyan-400">Servidores Linux e Windows</h4>
+            <ul class="list-disc list-inside text-gray-300">
+              <li>Gestão de file servers e permissões (ACLs)</li>
+              <li>Configuração e manutenção de SFTP seguro</li>
+              <li>Gerenciamento de atualizações e segurança</li>
             </ul>
-            <h3>Veeam Backup & Replication</h3>
-            <ul>
-                <li>Criação e monitoramento de rotinas de backup</li>
-                <li>Validação de restore e políticas de retenção</li>
+          </div>
+
+          <div>
+            <h4 class="text-xl font-bold text-cyan-400">Veeam Backup & Replication</h4>
+            <ul class="list-disc list-inside text-gray-300">
+              <li>Criação e monitoramento de rotinas de backup</li>
+              <li>Validação de restore e políticas de retenção</li>
             </ul>
-            <h3>VMware vSphere / vCenter</h3>
-            <ul>
-                <li>Criação e ajustes de VMs</li>
-                <li>Gestão de snapshots, templates e otimização de recursos</li>
+          </div>
+
+          <div>
+            <h4 class="text-xl font-bold text-cyan-400">VMware vSphere / vCenter</h4>
+            <ul class="list-disc list-inside text-gray-300">
+              <li>Criação e ajustes de VMs</li>
+              <li>Gestão de snapshots, templates e otimização de recursos</li>
             </ul>
-            <h3>VMware Horizon (VDI)</h3>
-            <ul>
-                <li>Publicação de novos aplicativos e desktops virtuais</li>
-                <li>Administração de pools, políticas e usuários</li>
-                <li>Gestão de farms e monitoramento de recursos</li>
+          </div>
+
+          <div>
+            <h4 class="text-xl font-bold text-cyan-400">VMware Horizon (VDI)</h4>
+            <ul class="list-disc list-inside text-gray-300">
+              <li>Publicação de novos aplicativos e desktops virtuais</li>
+              <li>Administração de pools, políticas e usuários</li>
+              <li>Gestão de farms e monitoramento de recursos</li>
             </ul>
-            <h3>Certificados Digitais e Sistemas Jurídicos/Fiscais</h3>
-            <ul>
-                <li>Instalação e configuração de certificados A1 e A3</li>
-                <li>Integração com navegadores e sistemas Windows</li>
-                <li>Suporte especializado para PJe e e-CAC</li>
+          </div>
+
+          <div>
+            <h4 class="text-xl font-bold text-cyan-400">Certificados Digitais e Sistemas Fiscais</h4>
+            <ul class="list-disc list-inside text-gray-300">
+              <li>Instalação e configuração de certificados A1 e A3</li>
+              <li>Integração com navegadores e sistemas</li>
+              <li>Suporte para PJe e e-CAC</li>
             </ul>
-        </section>
-        <section class="fade-in">
-            <h2>🚗 Suporte Técnico para o Setor Automotivo</h2>
-            <p>Atendimento especializado a centros automotivos, retíficas e oficinas especializadas:</p>
-            <ul>
-                <li>Configuração de scanners automotivos</li>
-                <li>Instalação e ajuste de softwares específicos de diagnóstico</li>
-                <li>Configuração e suporte para UPA (Universal Programmer Adapter)</li>
-                <li>Orientação para uso correto e atualização de dispositivos UPA</li>
-                <li>Suporte remoto e presencial (sob consulta)</li>
+          </div>
+
+          <div>
+            <h4 class="text-xl font-bold text-cyan-400">Setor Automotivo</h4>
+            <ul class="list-disc list-inside text-gray-300">
+              <li>Configuração de scanners automotivos</li>
+              <li>Instalação e ajuste de softwares de diagnóstico</li>
+              <li>Configuração e suporte para UPA (Universal Programmer Adapter)</li>
+              <li>Atualização de dispositivos e suporte remoto/presencial</li>
             </ul>
-        </section>
-        <section class="fade-in">
-            <h2>🏆 Projetos Realizados</h2>
-            <ul>
-                <li>Migração de Exchange Online com SPF/DKIM/DMARC</li>
-                <li>Automatização de relatórios de licenciamento M365 por setor</li>
-                <li>Estrutura completa de backups com Veeam</li>
-                <li>Provisionamento e ajustes de VMs em vCenter</li>
-                <li>Publicação de apps críticos via VMware Horizon</li>
-                <li>Integração de automação com API Azure</li>
-                <li>Suporte completo para configuração de scanners e UPA no setor automotivo</li>
-            </ul>
-        </section>
-        <section class="fade-in">
-            <h2>🎓 Formação</h2>
-            <p>Engenharia de Computação — Universidade São Judas Tadeu</p>
-        </section>
-        <section class="fade-in">
-            <h2>📞 Contato</h2>
-            <p>E-mail: contato@raulsystem.com.br</p>
-            <p>Atendimentos remotos em todo o Brasil</p>
-            <p>Consultoria sob demanda — atendimento personalizado</p>
-        </section>
-    </div>
-</body>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="py-16 bg-gray-800" data-aos="fade-up">
+      <div class="max-w-4xl mx-auto px-4">
+        <h3 class="text-3xl font-semibold mb-6 text-center">🏆 Projetos Realizados</h3>
+        <ul class="list-disc list-inside text-gray-300 space-y-2">
+          <li>Migração de Exchange Online com SPF/DKIM/DMARC</li>
+          <li>Automação de relatórios de licenciamento M365 por setor</li>
+          <li>Infra de backup robusta com Veeam</li>
+          <li>Provisionamento e ajustes de VMs em vCenter</li>
+          <li>Publicação de apps críticos via Horizon</li>
+          <li>Integração de automação com Azure API</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Formação -->
+    <section id="formacao" class="py-16 bg-gray-900" data-aos="fade-up">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h3 class="text-3xl font-semibold mb-4">🎓 Formação</h3>
+        <p class="text-gray-300">Engenharia de Computação — Universidade São Judas Tadeu</p>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-16 bg-gray-800" data-aos="fade-up">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h3 class="text-3xl font-semibold mb-4">📞 Contato</h3>
+        <p class="text-gray-300 mb-2">📧 <a href="mailto:contato@raulsystem.com.br" class="text-cyan-400 hover:underline">contato@raulsystem.com.br</a></p>
+        <p class="text-gray-400">Atendimento remoto em todo o Brasil | Consultoria sob demanda</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-center text-gray-500 py-4 border-t border-gray-700">
+      © 2025 Raul Silva Pereira • Desenvolvido com ❤️ e tecnologia
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
