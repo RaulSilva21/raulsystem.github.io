@@ -14,8 +14,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     
     <style>
       html {
@@ -30,27 +28,6 @@
         background: linear-gradient(to right, #4f46e5, #9333ea);
         -webkit-background-clip: text; -webkit-text-fill-color: transparent;
         background-clip: text; text-fill-color: transparent;
-      }
-
-      /* PRELOADER */
-      #preloader {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        z-index: 9999;
-        background-color: #f8fafc;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: opacity 0.7s ease-out, visibility 0.7s ease-out;
-        visibility: visible;
-        opacity: 1;
-      }
-      #preloader.hidden {
-        opacity: 0;
-        visibility: hidden;
       }
 
       /* FUNDO DE MALHA DIGITAL */
@@ -79,20 +56,20 @@
 
 <body class="text-slate-700">
 
-    <div id="preloader">
-      <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_es4p9z9g.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-    </div>
-
     <header class="sticky top-0 w-full z-50 bg-white/80 backdrop-blur-sm border-b border-slate-200">
       <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-        <h1 class="text-2xl font-bold gradient-text">Raul System</h1>
-        <nav class="hidden md:flex space-x-6 text-lg text-slate-800 font-medium">
-          <a href="#sobre" class="hover:text-indigo-600 transition-colors">Sobre Nós</a>
-          <a href="#cultura" class="hover:text-indigo-600 transition-colors">Nossa Cultura</a>
-          <a href="#solucoes" class="hover:text-indigo-600 transition-colors">Soluções</a>
-          <a href="#projetos" class="hover:text-indigo-600 transition-colors">Cases</a>
-          <a href="#contato" class="hover:text-indigo-600 transition-colors">Contato</a>
-        </nav>
+        <a href="#" class="text-2xl font-bold gradient-text">Raul System</a>
+        <div class="flex items-center space-x-8">
+            <nav class="hidden md:flex space-x-6 text-lg text-slate-800 font-medium">
+              <a href="#sobre" class="hover:text-indigo-600 transition-colors">Sobre Nós</a>
+              <a href="#cultura" class="hover:text-indigo-600 transition-colors">Nossa Cultura</a>
+              <a href="#solucoes" class="hover:text-indigo-600 transition-colors">Soluções</a>
+              <a href="#projetos" class="hover:text-indigo-600 transition-colors">Cases</a>
+            </nav>
+            <a href="https://www.instagram.com/raul.system" target="_blank" aria-label="Perfil no Instagram" class="hidden md:inline-block text-slate-500 hover:text-indigo-600 transition-colors">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.08 2.525c.636-.247 1.363-.416 2.427-.465C9.53 2.013 9.884 2 12.315 2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 8a3 3 0 110-6 3 3 0 010 6zm6.406-11.845a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z" clip-rule="evenodd" /></svg>
+            </a>
+        </div>
       </div>
     </header>
 
@@ -106,7 +83,7 @@
                     Soluções completas em Infraestrutura, Segurança e Automação de TI.
                 </p>
                 <a href="#contato" class="mt-10 inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold py-3 px-8 rounded-lg text-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
-                    Fale Conosco
+                    Nossos Contatos
                 </a>
             </div>
         </section>
@@ -149,4 +126,107 @@
         <section id="solucoes" class="py-20 px-6" data-aos="fade-up">
           <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl font-bold text-slate-900 mb-12 text-center flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-3 gradient-text" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-3 gradient-text" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
+                Nossas Soluções
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl border border-slate-200 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Microsoft 365 & Power Platform</h3>
+                    <p class="text-slate-600">Admin de Exchange, SharePoint e Teams, gestão de identidade no Azure AD e automação de processos.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl border border-slate-200 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Infraestrutura</h3>
+                    <p class="text-slate-600">Gestão de Active Directory, servidores Linux/Windows, file servers, ACLs e segurança de ponta a ponta.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl border border-slate-200 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Virtualização e VDI</h3>
+                    <p class="text-slate-600">Expertise em VMware vSphere e Horizon para otimização de VMs e publicação de desktops virtuais seguros.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl border border-slate-200 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Continuidade de Negócios</h3>
+                    <p class="text-slate-600">Implementação de rotinas de backup robustas com Veeam e estratégias de Disaster Recovery.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl border border-slate-200 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Segurança da Informação</h3>
+                    <p class="text-slate-600">LGPD, proteção contra ataques, backups seguros e monitoramento proativo.</p>
+                </div>
+                 <div class="bg-white p-8 rounded-xl border border-slate-200 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Monitoramento & Performance</h3>
+                    <p class="text-slate-600">Monitoramento 24/7 de sistemas e servidores, com alertas e otimização contínua.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl border border-slate-200 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Transformação Digital</h3>
+                    <p class="text-slate-600">Automação de processos e implantação de ferramentas modernas de colaboração.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl border border-slate-200 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Suporte e Manutenção</h3>
+                    <p class="text-slate-600">Suporte especializado remoto/presencial para otimização de performance e segurança de endpoints.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl border border-slate-200 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Soluções Setor Automotivo</h3>
+                    <p class="text-slate-600">Configuração e suporte para scanners, softwares de diagnóstico e dispositivos UPA.</p>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="locacao" class="py-16 px-6 bg-white" data-aos="fade-up">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-slate-900 mb-6">Locação de Máquinas</h2>
+                <p class="text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto">
+                    Disponibilizamos máquinas e equipamentos sob demanda para empresas. Consulte-nos para valores e disponibilidade.
+                </p>
+            </div>
+        </section>
+
+        <section id="projetos" class="py-16 px-6" data-aos="fade-up">
+          <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-slate-900 mb-8 text-center flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-3 gradient-text" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                Cases de Sucesso
+            </h2>
+            <ul class="space-y-4 text-lg text-slate-600">
+              <li class="flex items-start"><span class="text-indigo-500 mr-3 mt-1 font-bold">✓</span> Migração de Exchange Online com implementação completa de SPF, DKIM e DMARC.</li>
+              <li class="flex items-start"><span class="text-indigo-500 mr-3 mt-1 font-bold">✓</span> Automação de relatórios de licenciamento M365 por setor, com integração via Azure API.</li>
+              <li class="flex items-start"><span class="text-indigo-500 mr-3 mt-1 font-bold">✓</span> Estruturação de infraestrutura de backup robusta com Veeam para garantir RPO e RTO.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="contato" class="py-20 px-6 bg-white" data-aos="fade-up">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Vamos Iniciar Seu Próximo Projeto?</h2>
+                <p class="text-gray-600 text-xl mb-8">Entre em contato e descubra como podemos transformar a tecnologia da sua empresa.</p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="mailto:contato@raulsystem.com.br" class="inline-block w-full sm:w-auto bg-slate-800 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-slate-700 transition-colors">
+                      Enviar E-mail
+                    </a>
+                    <a href="https://wa.me/5511951409631" target="_blank" class="inline-block w-full sm:w-auto bg-green-500 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-green-600 transition-colors">
+                      Falar no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-100 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto py-12 px-6 text-center">
+            <h3 class="text-lg font-semibold text-slate-800 mb-4">Conecte-se Conosco</h3>
+            <a href="https://www.instagram.com/raul.system" target="_blank" aria-label="Perfil no Instagram" class="inline-block text-slate-500 hover:text-indigo-600 transition-colors duration-300">
+                <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.08 2.525c.636-.247 1.363-.416 2.427-.465C9.53 2.013 9.884 2 12.315 2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 8a3 3 0 110-6 3 3 0 010 6zm6.406-11.845a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z" clip-rule="evenodd" /></svg>
+            </a>
+            <p class="mt-8 text-center text-slate-500">
+                © 2025 Raul System • Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          duration: 800,
+          once: true,
+      });
+    </script>
+</body>
+</html>
